@@ -1,0 +1,76 @@
+{
+    "members":[
+        {
+            "id":"A00001",
+            "nickname":"용사보라미",
+            "phonenumber":"010-5032-3572",
+            "university": "중앙대학교",
+            "certification":true,
+            "membersince":"2022-09-07",
+            "certificationdata" : "이미지",
+            "email" : "jinwoo@tnmeta.io",
+            "nftprofile" : "이미지",
+            "department" : "컴퓨터공학과"
+        },
+        {
+            "id":"A00002",
+            "nickname":"용사보라미",
+            "phonenumber":"010-5032-3572",
+            "university": "중앙대학교",
+            "certification":true,
+            "membersince":"2022-09-07",
+            "certificationdata" : "이미지",
+            "email" : "jinwoo@tnmeta.io",
+            "nftprofile" : "이미지",
+            "department" : "컴퓨터공학과"
+        },
+        {
+            "id":"A00003",
+            "nickname":"용사보라미",
+            "phonenumber":"010-5032-3572",
+            "university": "중앙대학교",
+            "certification":true,
+            "membersince":"2022-09-07",
+            "certificationdata" : "이미지",
+            "email" : "jinwoo@tnmeta.io",
+            "nftprofile" : "이미지",
+            "department" : "컴퓨터공학과"
+        },
+        {
+            "id":"A00004",
+            "nickname":"용사보라미",
+            "phonenumber":"010-5032-3572",
+            "university": "중앙대학교",
+            "certification":true,
+            "membersince":"2022-09-07",
+            "certificationdata" : "이미지",
+            "email" : "jinwoo@tnmeta.io",
+            "nftprofile" : "이미지",
+            "department" : "컴퓨터공학과"
+        },
+        {
+            "id":"A00005",
+            "nickname":"용사보라미",
+            "phonenumber":"010-5032-3572",
+            "university": "중앙대학교",
+            "certification":true,
+            "membersince":"2022-09-07",
+            "certificationdata" : "이미지",
+            "email" : "jinwoo@tnmeta.io",
+            "nftprofile" : "이미지",
+            "department" : "컴퓨터공학과"
+        },
+        {
+            "id":"A00001",
+            "nickname":"용사보라미",
+            "phonenumber":"010-5032-3572",
+            "university": "중앙대학교",
+            "certification":true,
+            "membersince":"2022-09-07",
+            "certificationdata" : "이미지",
+            "email" : "jinwoo@tnmeta.io",
+            "nftprofile" : "이미지",
+            "department" : "컴퓨터공학과"
+        }
+    ]
+}
