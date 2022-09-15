@@ -9,6 +9,7 @@ const Navbar = () => {
       route:"member",
       menuName:"회원관리",
       }, 
+      
       {
       route:"community",
       menuName:"커뮤니티관리",
@@ -37,10 +38,10 @@ const Navbar = () => {
   return (
     <div>
     <div className='nav1'>
-        <div><img src = "./togather_logo.png" alt="로고" width = {200}/></div>
+        <div class = "logo-box"><img src = "./togather_logo.png" alt="로고" width = {200}/></div>
         {menulist.map((menu) => <div className='menu'>
             <Link to = {menu.route}><div className='menu-name'>{menu.menuName}</div></Link>
-            <div>&#9662;</div>
+            <div className='menu-icon'>&#9662;</div>
           </div>)}
     </div>
     <Navbar2></Navbar2>

@@ -5,7 +5,8 @@ import React, { useEffect, useState } from 'react'
 const Member = () => {
   const[memberList,setMemberList] = useState([]);
   const getMembers=async()=>{
-    let url = 'http://localhost:3002/members';
+    let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/members';
+    // let url = 'http://localhost:3002/members';
     let response = await fetch(url);
     let data = await response.json();
     setMemberList(data);
@@ -15,9 +16,6 @@ const Member = () => {
     },[])
   return (
     <div>
-
-    
-        
         <table width ="100%">
         <colgroup>
         <col width = "5%"></col>
@@ -49,7 +47,7 @@ const Member = () => {
         </thead>   
         {memberList.map((item)=><tr className='memberList'>
           <td>{item.id}</td>
-          <td></td>
+          <td>{item.nickname}</td>
           <td>{item.nickname}</td>
           <td>{item.phonenumber}</td>
           <td>{item.university}</td>
