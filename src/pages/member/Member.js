@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import MemberSearch from '../components/MemberSearch';
+import MemberSearch from 'components/MemberSearch';
 
 
 const Member = () => {
