@@ -3,7 +3,7 @@ import { Link,Outlet } from 'react-router-dom'
 import Topbar from './Topbar'
 import 'assets/css/Sidebar.css'
 
-const Topbar = () => {
+const Sidebar = () => {
 
     const menulist = [
       {
@@ -51,4 +51,4 @@ const Topbar = () => {
   )
 }
 
-export default Topbar
+export default Sidebar
