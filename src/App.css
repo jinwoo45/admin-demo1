@@ -1,3 +1,6 @@
+/* 메인 컬러 #6c5ce7
+보조 컬러 #fdcb6e */
+
 *{
     margin: 0;
     list-style: none;
@@ -69,8 +72,10 @@ table{
     border-collapse:collapse;
  }
 th{
-    background-color: #eee;
+    background-color: #6c5ce7;
     padding: 10px 5px;
+    color:#fff;
+    opacity:0.7;
 }
 td{
     border-bottom: 1px solid #eee;
@@ -89,10 +94,11 @@ td{
     align-items: center;
 }
 
-.bar-icon{
-    background-color: #eee;
-    font-size: 1.4rem;
-    padding: 7px;
+.bar-icon{  
+    color:#000;
+    font-size: 1.6rem;
+    padding:5px;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s;
 }
