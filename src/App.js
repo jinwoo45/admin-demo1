@@ -3,7 +3,7 @@ import Login from './pages/Login';
 import Member from './pages/member/Member';
 import Community from './pages/community/Community';
 import { Routes, Route} from "react-router-dom";
-import Navbar from './components/Navbar';
+import Navbar from './components/Sidebar';
 import Club from './pages/club/Club';
 import Admin from './pages/admin/Admin';
 import Payment from './pages/payment/Payment';
