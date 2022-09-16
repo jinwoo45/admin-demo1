@@ -3,7 +3,7 @@ import Login from './pages/Login';
 import Member from './pages/member/Member';
 import Community from './pages/community/Community';
 import { Routes, Route} from "react-router-dom";
-import Navbar from './components/Sidebar';
+import Sidebar from './components/Sidebar';
 import Club from './pages/club/Club';
 import Admin from './pages/admin/Admin';
 import Payment from './pages/payment/Payment';
@@ -15,7 +15,7 @@ function App() {
     <div>
           
       <Routes>
-          <Route element={<Navbar/>}>
+          <Route element={<Sidebar/>}>
           <Route path="/" element={<Member/>} />
           <Route path="/member" element={<Member />} />
           <Route path="/community" element={<Community />} />

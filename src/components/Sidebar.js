@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link,Outlet } from 'react-router-dom'
-import Navbar2 from './Topbar'
+import Topbar from './Topbar'
 import 'assets/css/Sidebar.css'
 
-const Navbar = () => {
+const Topbar = () => {
 
     const menulist = [
       {
@@ -45,10 +45,10 @@ const Navbar = () => {
             <div className='menu-icon'>&#9662;</div>
           </div>)}
     </div>
-    <Navbar2></Navbar2>
+    <Topbar></Topbar>
     <Outlet />
     </div>
   )
 }
 
-export default Navbar
+export default Topbar

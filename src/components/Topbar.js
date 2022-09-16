@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import 'assets/css/Topbar.css'
 
-const Navbar2 = () => {
+const Topbar = () => {
   return (
   <div className = 'nav2'>
     <div className = 'bars'>
@@ -19,4 +19,4 @@ const Navbar2 = () => {
   )
 }
 
-export default Navbar2
+export default Topbar
