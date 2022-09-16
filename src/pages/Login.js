@@ -24,7 +24,7 @@ const darkTheme = createTheme({
         <ThemeProvider theme={darkTheme}>
     <CssBaseline />
     <Container component="main" maxWidth="xs">
-         <Box
+          <Box
           sx={{
             marginTop: 8,
             display: 'flex',

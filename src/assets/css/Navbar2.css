@@ -1,0 +1,25 @@
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav2-right{
+    display: flex;
+}
+
+.nav2-right div{
+    margin:10px 15px;
+}
+.bars{
+    display: flex;
+    align-items: center;
+}
+
+.bar-icon{
+    background-color: #eee;
+    font-size: 1.4rem;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}

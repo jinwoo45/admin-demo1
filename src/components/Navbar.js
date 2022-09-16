@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link,Outlet } from 'react-router-dom'
 import Navbar2 from './Navbar2'
+import 'assets/css/Navbar.css'
 
 const Navbar = () => {
 

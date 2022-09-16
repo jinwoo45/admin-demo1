@@ -1,0 +1,42 @@
+.nav1{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 270px;
+    padding: 30px 0px;
+    height: 100%;
+    background-color: #121212;
+    color:white;
+}
+
+.logo-box{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.nav1 a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+.menu{
+    padding:15px 20px;  
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menu:hover{
+    background: white;
+    border-right: 1px solid #ddd;
+}
+
+.menu:hover a{
+    color: #121212;
+}
+
+.menu:hover .menu-icon{
+    color:#121212
+}
