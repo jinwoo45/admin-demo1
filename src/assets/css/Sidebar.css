@@ -41,3 +41,11 @@
     color:#121212
 }
 
+.menu-active{
+    background: white;
+    border-right: 1px solid #ddd;
+}
+
+.menu-name-active{
+    color:#121212
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MemberSearch from 'components/MemberSearch';
 import Paging from '../../components/Paging';
 
+
 const Member = () => {
   const[memberList,setMemberList] = useState([]);
   const getMembers=async()=>{
