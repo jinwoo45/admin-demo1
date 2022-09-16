@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import MemberSearch from '../components/MemberSearch';
 
 
 const Member = () => {
@@ -16,6 +16,7 @@ const Member = () => {
     },[])
   return (
     <div>
+      <MemberSearch></MemberSearch>
         <table width ="100%">
         <colgroup>
         <col width = "5%"></col>
@@ -25,7 +26,7 @@ const Member = () => {
         <col width = "7%"></col>
         <col width = "10%"></col>
         <col width = "3%"></col>
-        <col width = "7%"></col>
+        <col width = "4%"></col>
         <col width = "7%"></col>
         <col width = "7%"></col>
         <col width = "7%"></col>
