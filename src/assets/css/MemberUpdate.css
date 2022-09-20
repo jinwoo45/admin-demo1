@@ -1,0 +1,29 @@
+.modal-update-box{
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.modal-update-box-in{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-update-box-in li{
+    width: calc(100% / 2);
+    margin-top: 20px;
+    display: flex;
+}
+
+.modal-update-button-box{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table-front{
+    width: 150px;
+}

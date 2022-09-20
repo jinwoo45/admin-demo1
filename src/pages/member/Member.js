@@ -1,9 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import MemberSearch from 'components/MemberSearch';
 import Paging from '../../components/Paging';
+import MemberModal from './MemberModal';
+import MemberUpdate from './MemberUpdate';
 
 const Member = () => {
   const[memberList,setMemberList] = useState([]);
+  const[modalView,setModalView] = useState(false);
+  const[modalUpdateView,setModalUpdateView] =useState(false);
+
+  const modalToggle = () =>{
+    setModalView(prev => !prev)
+  }
+
+  const modalUpdateToggle = ()=>{
+    setModalUpdateView(prev => !prev)
+  }
+
   const getMembers=async()=>{
     let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/members';
     // let url = 'http://localhost:3002/members';
@@ -55,15 +68,18 @@ const Member = () => {
           <td>{item.department}</td>
           <td>{item.email}</td>
           <td>{item.certification === true ? "Y" : "N" }</td>
-          <td><button>modal view</button></td>
+          <td>
+            <button onClick = {modalToggle}>인증데이터 보기</button>
+          </td>
           <td>{item.membersince}</td>
           <td>
-            <button>수정</button>
+            <button onClick = {modalUpdateToggle}>수정</button>
             <button>삭제</button>
             </td>
         </tr>)}
       </table>
-
+      {modalUpdateView && <MemberUpdate modalUpdateToggle = {modalUpdateToggle}></MemberUpdate>}
+      {modalView && <MemberModal modalToggle = {modalToggle}></MemberModal>}
         <Paging></Paging>
 
     </div>
