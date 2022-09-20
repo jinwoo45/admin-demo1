@@ -1,19 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faUser, faLock } from '@fortawesome/free-solid-svg-icons'
 import 'assets/css/Topbar.css'
 
 const Topbar = () => {
+
+  const navigate = useNavigate();
+  const logoutUser = (e) =>{
+    navigate('/login');
+  };
+
   return (
   <div className = 'nav2'>
     <div className = 'bars'>
       <FontAwesomeIcon icon = {faBars} className = "bar-icon" />
     </div>
     <div className='nav2-right'>
-      <div>admin님</div>
-      <div>개인정보 수정</div>
-      <div><Link to= "/login">로그아웃</Link></div>
+      <div>
+        <FontAwesomeIcon icon = {faUser} className = "nav2-right-icon" /> 
+        admin님
+      </div> {/* 개인정보 수정 페이지 이동 */}
+     
+      <div onClick = {logoutUser}>
+      <FontAwesomeIcon icon = {faLock} className = "nav2-right-icon"  /> 
+        로그아웃
+      </div>
   </div>
 </div>
   )

@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 #root{
     margin-left: 270px;
     padding: 0 20px;
@@ -36,7 +41,14 @@ td{
 
 .nav2-right div{
     margin:10px 15px;
+    color: #333;
+    cursor: pointer;
 }
+
+.nav2-right div:hover{
+    color: #000;
+}
+
 .bars{
     display: flex;
     align-items: center;
@@ -51,6 +63,13 @@ td{
     transition: .3s;
 }
 
+.nav2-right-icon{
+    margin-right: 5px;
+}
+
+
+
 button{
     cursor: pointer;
 }
+

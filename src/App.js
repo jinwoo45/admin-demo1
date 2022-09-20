@@ -9,6 +9,7 @@ import Admin from './pages/admin/Admin';
 import Payment from './pages/payment/Payment';
 
 
+
 function App() {
 
   return (
@@ -16,7 +17,7 @@ function App() {
           
       <Routes>
           <Route element={<Sidebar/>}>
-          <Route path="/" element={<Member/>} />
+          <Route path="/" element={<Member/> } />
           <Route path="/member" element={<Member />} />
           <Route path="/community" element={<Community />} />
           <Route path="/club" element={<Club />} />
@@ -27,7 +28,7 @@ function App() {
           </Route>
           
           {/* 내비바 숨기고 싶은 페이지 */}
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login/>} />
       </Routes>
     </div>
   );
