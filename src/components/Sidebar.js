@@ -9,31 +9,30 @@ const Sidebar = () => {
       {
       route:"member",
       menuName:"회원관리",
-      }, 
-      
+      },
       {
-      route:"community",
-      menuName:"커뮤니티관리",
+      route:"gathering",
+      menuName:"게더링",
       }, 
       {
       route:"club",
-      menuName:"동아리관리",
+      menuName:"동아리",
       }, 
       {
       route:"admin",
-      menuName:"관리자관리",
+      menuName:"관리자",
       }, 
       {
-      route:"payment",
-      menuName:"결제관리",
+      route:"store",
+      menuName:"상점등록",
       }, 
       {
       route:"nft",
-      menuName:"NFT",
+      menuName:"NFT이벤트",
       }, 
       {
-      route:"question",
-      menuName:"Q&A",
+      route:"community",
+      menuName:"커뮤니티",
       }]
 
   return (

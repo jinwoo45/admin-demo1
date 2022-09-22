@@ -7,6 +7,9 @@ import Sidebar from './components/Sidebar';
 import Club from './pages/club/Club';
 import Admin from './pages/admin/Admin';
 import Payment from './pages/payment/Payment';
+import Gathering from './pages/gathering/Gathering';
+import Store from './pages/store/Store';
+import Nft from './pages/nft/Nft';
 
 
 
@@ -19,12 +22,12 @@ function App() {
           <Route element={<Sidebar/>}>
           <Route path="/" element={<Member/> } />
           <Route path="/member" element={<Member />} />
-          <Route path="/community" element={<Community />} />
+          <Route path="/gathering" element={<Gathering />} />
           <Route path="/club" element={<Club />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/nft" element={<Member />} />
-          <Route path="/question" element={<Member />} />
+          <Route path="/store" element={<Store />} />
+          <Route path="/nft" element={<Nft />} />
+          <Route path="/community" element={<Community />} />
           </Route>
           
           {/* 내비바 숨기고 싶은 페이지 */}
