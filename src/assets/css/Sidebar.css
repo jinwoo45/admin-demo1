@@ -21,9 +21,8 @@
 }
 
 .menu{
-    padding:15px 20px;  
+    padding:15px 15px;  
     display: flex;
-    justify-content: space-between;
     cursor: pointer;
     transition: .3s;
 }
@@ -41,3 +40,7 @@
     color:#121212
 }
 
+.menu-icon{
+    width: 60px;
+    text-align: center;
+}
