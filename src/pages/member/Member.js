@@ -29,6 +29,7 @@ const Member = () => {
     <div>
       <MemberSearch></MemberSearch>
       <div className='insert-member'> 
+      <button>선택삭제</button>
       <button onClick={modalUpdateToggle} >회원등록</button>
       </div>
         <table width ="100%">

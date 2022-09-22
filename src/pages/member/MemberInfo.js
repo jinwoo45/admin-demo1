@@ -30,8 +30,7 @@ const MemberInfo = ({item}) => {
             <button onClick = {modalToggle}>인증데이터 보기</button>
           </td>
           <td>
-            <button onClick = {modalUpdateToggle}>관리</button>
-            <button>삭제</button>
+            <button onClick = {modalUpdateToggle}>정보 수정</button>
             </td>
         </tr>
         {modalUpdateView && <MemberUpdate modalUpdateToggle = {modalUpdateToggle}></MemberUpdate>}
