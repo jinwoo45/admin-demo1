@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import MemberSearch from 'components/MemberSearch';
+import MemberSearch from './MemberSearch';
 import Paging from '../../components/Paging';
-import MemberModal from './MemberModal';
+import './css/Member.css';
+import MemberInfo from './MemberInfo';
 import MemberUpdate from './MemberUpdate';
 
 const Member = () => {
   const[memberList,setMemberList] = useState([]);
-  const[modalView,setModalView] = useState(false);
   const[modalUpdateView,setModalUpdateView] =useState(false);
-
-  const modalToggle = () =>{
-    setModalView(prev => !prev)
-  }
+  
 
   const modalUpdateToggle = ()=>{
     setModalUpdateView(prev => !prev)
   }
 
+
   const getMembers=async()=>{
-    let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/members';
-    // let url = 'http://localhost:3002/members';
+    // let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/members';
+    let url = 'http://localhost:3002/members';
     let response = await fetch(url);
     let data = await response.json();
     setMemberList(data);
@@ -30,56 +28,39 @@ const Member = () => {
   return (
     <div>
       <MemberSearch></MemberSearch>
+      <div className='insert-member'> 
+      <button onClick={modalUpdateToggle} >회원등록</button>
+      </div>
         <table width ="100%">
         <colgroup>
         <col width = "5%"></col>
-        <col width = "5%"></col>
-        <col width = "7%"></col>
         <col width = "10%"></col>
-        <col width = "7%"></col>
         <col width = "10%"></col>
-        <col width = "3%"></col>
-        <col width = "4%"></col>
-        <col width = "7%"></col>
-        <col width = "7%"></col>
-        <col width = "7%"></col>
+        <col width = "10%"></col>
+        <col width = "10%"></col>
+        <col width = "10%"></col>
+        <col width = "10%"></col>
+        <col width = "10%"></col>
+        <col width = "10%"></col>
+        <col width = "10%"></col>
         </colgroup> 
         <thead>    
         <tr>
-          <th>회원번호</th>
+          <th><input type="checkbox"></input></th>
+          <th>Account ID</th>
+          <th>전화번호</th>
           <th>이름</th>
-          <th>닉네임</th>
-          <th>핸드폰번호</th>
-          <th>학교</th>
-          <th>학과</th>
           <th>이메일</th>
-          <th>인증여부</th>
+          <th>학교</th>
+          <th>인증 여부</th>
+          <th>계정 정지 여부</th>
           <th>인증데이터</th>
-          <th>가입일</th>
           <th>기능</th>
         </tr>
         </thead>   
-        {memberList.map((item)=><tr className='memberList'>
-          <td>{item.id}</td>
-          <td>{item.nickname}</td>
-          <td>{item.nickname}</td>
-          <td>{item.phonenumber}</td>
-          <td>{item.university}</td>
-          <td>{item.department}</td>
-          <td>{item.email}</td>
-          <td>{item.certification === true ? "Y" : "N" }</td>
-          <td>
-            <button onClick = {modalToggle}>인증데이터 보기</button>
-          </td>
-          <td>{item.membersince}</td>
-          <td>
-            <button onClick = {modalUpdateToggle}>수정</button>
-            <button>삭제</button>
-            </td>
-        </tr>)}
+        {memberList.map((item)=> <MemberInfo item = {item}/>)}
       </table>
       {modalUpdateView && <MemberUpdate modalUpdateToggle = {modalUpdateToggle}></MemberUpdate>}
-      {modalView && <MemberModal modalToggle = {modalToggle}></MemberModal>}
         <Paging></Paging>
 
     </div>

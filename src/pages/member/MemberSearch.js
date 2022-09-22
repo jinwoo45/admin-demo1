@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/MemberSearch.css'
+import './css/MemberSearch.css'
 const MemberSearch = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ const MemberSearch = () => {
           <label>학교 : </label>
             <select>
               <option>중앙대학교</option>
-              <option>건국대학교</option>
+              <option>건국대학교 글로컬캠퍼스</option>
               <option>배제대학교</option>
             </select>
         </div>
@@ -18,7 +18,7 @@ const MemberSearch = () => {
         <div className='search-box-in'>
           <label>검색어 : </label>
        
-       <div>
+        
             <select>
               <option>회원번호</option>
               <option>이름</option>
@@ -27,13 +27,13 @@ const MemberSearch = () => {
               <option>학과</option>
             </select>
             <input></input>
-          </div>
+        
         </div>
 
-        <div className='search-box-in'>
+        {/* <div className='search-box-in'>
           <label>가입일 : </label>
           <input></input> ~ <input></input>
-        </div>
+        </div> */}
       </div>
         <div className='button-box'>
          <button>검색</button>        
