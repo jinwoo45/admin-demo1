@@ -1,6 +1,6 @@
 import React from 'react'
-import "../../assets/css/MemberModal.css"
-import "../../assets/css/MemberUpdate.css"
+import "./css/MemberModal.css"
+import "./css/MemberUpdate.css"
 
 const MemberUpdate = ({modalUpdateToggle}) => {
   return (
@@ -10,16 +10,16 @@ const MemberUpdate = ({modalUpdateToggle}) => {
             <h3>-학생정보</h3>
             <ul className='modal-update-box-in'>
                 <li>
-                    <div className = "table-front">회원번호 : </div>
+                    <div className = "table-front">Account ID : </div>
                     <div>A0001</div>
                 </li>
                 <li>
                     <div className = "table-front">이름 : </div>
-                    <input value='용사보라미'></input>
+                    <input value='김진우'></input>
                 </li>
                 <li>
                     <div className = "table-front">닉네임 : </div>
-                    <input value='용사보라미'></input>
+                    <input value='메뚜기3분요리'></input>
                 </li>
                 <li>
                     <div className = "table-front">핸드폰번호 : </div>
@@ -27,23 +27,31 @@ const MemberUpdate = ({modalUpdateToggle}) => {
                 </li>
                 <li>
                     <div className = "table-front">학교 : </div>
-                    <input value='중앙대학교'></input>
+                    <input value='00대학교'></input>
                 </li>
                 <li>
-                    <div className = "table-front">인증여부 : </div>
-                    <div>Y</div>
+                    <div className = "table-front">학과 : </div>
+                    <input value='컴퓨터공학과'></input>
                 </li>
                 <li>
-                    <div className = "table-front">가입일 : </div>
-                    <div>2022-09-07</div>
+                    <div className = "table-front">학번 : </div>
+                    <input value='20154303'></input>
                 </li>
                 <li>
                     <div className = "table-front">이메일 : </div>
                     <input value='jinwoo@tnmeta.io'></input>
                 </li>
                 <li>
-                    <div className = "table-front">학과 : </div>
-                    <input value='컴퓨터공학과'></input>
+                    <div className = "table-front">인증 여부 : </div>
+                    <div>N</div>
+                </li>
+                <li>
+                    <div className = "table-front">계정 정지 여부 : </div>
+                    <div>N</div>
+                </li>
+                <li>
+                    <div className = "table-front">가입일 : </div>
+                    <div>2022-09-07</div>
                 </li>
             </ul>
 

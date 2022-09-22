@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesLeft,faAnglesRight,faAngleLeft,faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import '../assets/Paging.css';
+import '../assets/css/Paging.css';
 
 
 const Paging = () => {

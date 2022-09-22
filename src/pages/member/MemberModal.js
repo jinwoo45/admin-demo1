@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../assets/css/MemberModal.css"
+import "./css/MemberModal.css"
 
 const MemberModal = ({modalToggle}) => {
   return (
