@@ -51,7 +51,7 @@ const Member = () => {
           <th>Account ID</th>
           <th>전화번호</th>
           <th>이름</th>
-          <th>이메일</th>
+          <th>구분</th>
           <th>학교</th>
           <th>인증 여부</th>
           <th>계정 정지 여부</th>
