@@ -37,6 +37,12 @@ button {
     cursor: pointer;
     border: none;
 }
+/* select {
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
 
 .nav2-right{
     display: flex;

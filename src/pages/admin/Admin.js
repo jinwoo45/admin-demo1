@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './css/Admin.css'
 import DetailAdmin from './DetailAdmin'
 import Paging from 'components/Paging'
+import SearchAdmin from './SearchAdmin'
+import { Search } from '@mui/icons-material'
 
 const Admin = () => {
   const[adminList,setAdminList] = useState([]);
@@ -60,6 +62,7 @@ const Admin = () => {
     },[])
   return (
     <div className="admin-container">
+      <SearchAdmin></SearchAdmin>
       <div className="admin-btn">
         <button type="button">선택 항목 삭제</button>
         <button type="button">등록</button>
