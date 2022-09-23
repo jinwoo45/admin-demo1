@@ -51,8 +51,8 @@ const Admin = () => {
   }
 
   const getAdminList=async()=>{
-    //let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/admin';
-    let url = 'http://localhost:3002/admin';
+    let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/admin';
+    //let url = 'http://localhost:3002/admin';
     let response = await fetch(url);
     let data = await response.json();
     setAdminList(data);

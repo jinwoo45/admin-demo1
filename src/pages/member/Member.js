@@ -16,8 +16,8 @@ const Member = () => {
 
 
   const getMembers=async()=>{
-    // let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/members';
-    let url = 'http://localhost:3002/members';
+    let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/members';
+    //let url = 'http://localhost:3002/members';
     let response = await fetch(url);
     let data = await response.json();
     setMemberList(data);
