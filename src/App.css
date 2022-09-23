@@ -33,6 +33,10 @@ td{
     border-bottom: 1px solid #eee;
     padding: 10px 5px;
 }
+button {
+    cursor: pointer;
+    border: none;
+}
 
 .nav2-right{
     display: flex;
@@ -69,6 +73,6 @@ td{
 
 
 button{
-    cursor: pointer;
+    
 }
 

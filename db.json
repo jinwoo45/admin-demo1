@@ -110,6 +110,44 @@
             "nftprofile" : "이미지",
             "department" : "컴퓨터공학과"
         }
+    ],
+    "admin": [
+        {
+            "uid":"wefdsfs",
+            "adminId": "super",
+            "adminName": "관리자",
+            "adminGroup": "슈퍼관리자",
+            "adminDept": "",
+            "adminEmail": "super@super.com",
+            "adminPhone": "010-1111-1111",
+            "createId": "super",
+            "createDate": "2022-09-07",
+            "updateDate": "2022-09-10"
+        },
+        {
+            "uid":"wefdsfs",
+            "adminId": "tnmeta",
+            "adminName": "관리자",
+            "adminGroup": "티앤메타관리자",
+            "adminDept": "개발팀",
+            "adminEmail": "tnmeta@tnmeta.com",
+            "adminPhone": "010-1111-1111",
+            "createId": "super",
+            "createDate": "2022-09-07",
+            "updateDate": "2022-09-10"
+        },
+        {
+            "uid":"wefdsfs",
+            "adminId": "admin",
+            "adminName": "관리자",
+            "adminGroup": "학교관리자",
+            "adminDept": "중앙대학교",
+            "adminEmail": "mail@mail.com",
+            "adminPhone": "010-1111-1111",
+            "createId": "super",
+            "createDate": "2022-09-07",
+            "updateDate": "2022-09-10"
+        }
     ]
 }
 
