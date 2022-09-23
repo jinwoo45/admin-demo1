@@ -96,10 +96,25 @@
             "email" : "jinwoo@tnmeta.io",
             "nftprofile" : "이미지",
             "department" : "컴퓨터공학과"
-        },        {
+        },       
+        {
             "id":"A00008",
             "part":"재학생",
             "nickname":"오혜랑",
+            "phonenumber":"010-5032-3572",
+            "university": "00대학교",
+            "certification":true,
+            "membersince":"2022-09-07",
+            "certificationdata" : "이미지",
+            "memberstate": false,
+            "email" : "jinwoo@tnmeta.io",
+            "nftprofile" : "이미지",
+            "department" : "컴퓨터공학과"
+        },
+        {
+            "id":"A00009",
+            "part":"예비대학생",
+            "nickname":"이주희",
             "phonenumber":"010-5032-3572",
             "university": "00대학교",
             "certification":true,
