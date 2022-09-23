@@ -53,10 +53,10 @@ const Sidebar = () => {
     <div>
     <div className='nav1'>
         <div class = "logo-box"><img src = "./togather_logo.png" alt="로고" width = {200}/></div>
-        {menulist.map((menu) => <div className='menu'>
+        {menulist.map((menu) => <Link to = {menu.route}><div className='menu'>
             <div className='menu-icon'>{menu.icon}</div>
-            <Link to = {menu.route}><div className='menu-name'>{menu.menuName}</div></Link>
-          </div>)}
+            <div className='menu-name'>{menu.menuName}</div>
+          </div></Link>)}
     </div>
     <Topbar></Topbar>
     <Outlet />

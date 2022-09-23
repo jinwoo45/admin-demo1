@@ -5,6 +5,7 @@
     margin: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 a{
@@ -22,6 +23,7 @@ a{
 }
 
 table{
+    margin-top: 8px;
     text-align: center;
     border-collapse:collapse;
 }
@@ -76,9 +78,14 @@ button {
     margin-right: 5px;
 }
 
-
-
 button{
     
 }
 
+.footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

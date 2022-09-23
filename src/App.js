@@ -6,10 +6,11 @@ import { Routes, Route} from "react-router-dom";
 import Sidebar from './components/Sidebar';
 import Club from './pages/club/Club';
 import Admin from './pages/admin/Admin';
-import Payment from './pages/payment/Payment';
 import Gathering from './pages/gathering/Gathering';
 import Store from './pages/store/Store';
 import Nft from './pages/nft/Nft';
+import University from './pages/university/University';
+import Footer from 'components/Footer';
 
 
 
@@ -19,9 +20,10 @@ function App() {
     <div>
           
       <Routes>
-          <Route element={<Sidebar/>}>
+          <Route element={<><Sidebar/><Footer/></>}>
           <Route path="/" element={<Member/> } />
           <Route path="/member" element={<Member />} />
+          <Route path="/university" element={<University />} />
           <Route path="/gathering" element={<Gathering />} />
           <Route path="/club" element={<Club />} />
           <Route path="/admin" element={<Admin />} />
