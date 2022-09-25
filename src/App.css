@@ -104,3 +104,11 @@ button {
     font-weight: bold !important;
     background-color: #6c5ce7 !important;
 }
+
+.Mui-focused {
+    color: #6c5ce7 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: #6c5ce7 !important;
+}
