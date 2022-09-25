@@ -1,37 +1,38 @@
 /* 메인 컬러 #6c5ce7
 보조 컬러 #fdcb6e */
 
-*{
+* {
     margin: 0;
     list-style: none;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
-#root{
+#root {
     margin-left: 270px;
     padding: 0 20px;
 }
 
-.loginroot{
+.loginroot {
     margin-right: 270px;
 }
 
-table{
+table {
     margin-top: 8px;
     text-align: center;
-    border-collapse:collapse;
+    border-collapse: collapse;
+    font-size: 15px;
 }
-th{
+th {
     background-color: #efefef;
     padding: 10px 5px;
 }
-td{
+td {
     border-bottom: 1px solid #eee;
     padding: 10px 5px;
 }
@@ -46,46 +47,50 @@ button {
     appearance: none;
 } */
 
-.nav2-right{
+.nav2-right {
     display: flex;
 }
 
-.nav2-right div{
-    margin:10px 15px;
+.nav2-right div {
+    margin: 10px 15px;
     color: #333;
     cursor: pointer;
 }
 
-.nav2-right div:hover{
+.nav2-right div:hover {
     color: #000;
 }
 
-.bars{
+.bars {
     display: flex;
     align-items: center;
 }
 
-.bar-icon{  
-    color:#000;
+.bar-icon {
+    color: #000;
     font-size: 1.6rem;
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.nav2-right-icon{
+.nav2-right-icon {
     margin-right: 5px;
 }
 
-button{
-    
-}
-
-.footer{
-    position: fixed;
-    bottom:0;
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+    margin-top: 250px;
+    padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 12px;
+}
+
+.login-btn {
+    font-weight: bold !important;
+    background-color: #6c5ce7 !important;
 }

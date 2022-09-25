@@ -1,5 +1,7 @@
-import React from 'react'
-import './css/SearchAdmin.css'
+import React from "react";
+import "./css/SearchAdmin.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const SearchAdmin = () => {
     return (
@@ -12,8 +14,11 @@ const SearchAdmin = () => {
             </select>
             <input type="text" />
             {/* <button type="button" className="search-admin-btn">검색</button> */}
+            <button className="search-admin-btn">
+                <FontAwesomeIcon icon={faSearch} />
+            </button>
         </div>
-    )
-}
+    );
+};
 
-export default SearchAdmin
+export default SearchAdmin;
