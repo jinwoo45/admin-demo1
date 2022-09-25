@@ -13,9 +13,19 @@ a {
     color: #000;
 }
 
-#root {
+/* #root {
     margin-left: 270px;
     padding: 0 20px;
+} */
+
+.content {
+    margin-left: 270px;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+.content-long {
+    margin: 0;
 }
 
 .loginroot {

@@ -11,7 +11,7 @@
 }
 
 .search-box-in {
-    width: calc(100% / 4);
+    margin-right: 20px;
     display: flex;
     align-items: center;
 }
@@ -19,13 +19,16 @@
 .search-box-in select {
     width: 200px;
     height: 30px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .search-box-in input {
     width: 200px;
     height: 30px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
 }
 
 .search-box-in label {

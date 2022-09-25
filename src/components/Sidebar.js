@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSchool, faUser, faUsers, faGolfBall, faUserGear, faStore, faFileImage, faComments } from "@fortawesome/free-solid-svg-icons";
 import Topbar from "./Topbar";
 import "assets/css/Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ sidebar, showSidebar }) => {
     const menulist = [
         {
             icon: <FontAwesomeIcon icon={faUser} />,
@@ -51,12 +51,12 @@ const Sidebar = () => {
 
     return (
         <div>
-            <div className="nav1">
+            <div className={sidebar ? "nav1 nav-off" : "nav1"}>
                 <div class="logo-box">
                     <img src="./togather_logo.png" alt="로고" width={200} />
                 </div>
-                {menulist.map((menu) => (
-                    <NavLink to={menu.route}>
+                {menulist.map((menu, i) => (
+                    <NavLink to={menu.route} key={i}>
                         <div className="menu">
                             <div className="menu-icon">{menu.icon}</div>
                             <div className="menu-name">{menu.menuName}</div>
@@ -64,7 +64,7 @@ const Sidebar = () => {
                     </NavLink>
                 ))}
             </div>
-            <Topbar></Topbar>
+            <Topbar showSidebar={showSidebar}></Topbar>
             <Outlet />
         </div>
     );
