@@ -39,7 +39,10 @@ function App() {
                     <Route path="/admin" element={<Admin />} />
                     <Route path="/store" element={<Store />} />
                     <Route path="/nft" element={<Nft />} />
-                    <Route path="/community" element={<Community />} />
+                    <Route path="/community/university" element={<Community />} />
+                    <Route path="/community/freshman" element={<Community />} />
+                    <Route path="/community/sophomore" element={<Community />} />
+                    <Route path="/community/declare" element={<Community />} />
                 </Route>
 
                 {/* 내비바 숨기고 싶은 페이지 */}
