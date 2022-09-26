@@ -1,0 +1,35 @@
+.search-admin-container {
+    margin: 10px 0;
+    position: relative;
+}
+
+.search-admin-container select {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.search-admin-container .icon-arrow {
+    position: absolute;
+    top: 0;
+    left: 65px;
+    display: block;
+    padding: 0;
+}
+
+.search-admin-container input {
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+.search-admin-container .search-admin-btn {
+    margin: 5px 15px;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #6c5ce7;
+    border-radius: 5px;
+    font-size: 13px;
+}
