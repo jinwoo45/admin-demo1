@@ -71,6 +71,9 @@
     border-radius: 5px;
     font-size: 13px;
 }
+.modal > section > footer button.detail-admin-cancel {
+    background-color: #ddd;
+}
 .modal.openModal {
     display: flex;
     align-items: center;
