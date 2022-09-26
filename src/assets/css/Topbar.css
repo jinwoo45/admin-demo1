@@ -23,3 +23,32 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.profile{
+    position: relative;
+}
+.profilebox{
+    position:absolute;
+    width:140px;
+    left:-40px;
+    background-color: #bbb;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.profilebox div{
+    color: #fff;
+}
+
+.profile-tri{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid #bbb;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top:-30px;
+}

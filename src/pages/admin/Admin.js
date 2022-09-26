@@ -3,52 +3,18 @@ import './css/Admin.css'
 import DetailAdmin from './DetailAdmin'
 import Paging from 'components/Paging'
 import SearchAdmin from './SearchAdmin'
-import { Search } from '@mui/icons-material'
 
 const Admin = () => {
   const[adminList,setAdminList] = useState([]);
 
-  const[checkedItems, setCheckedItems] = useState(new Set());
-
-  const [bChecked, setChecked] = useState(false);
-
-  const [isAllChecked, setIsAllChecked] = useState(false);
-
   const [modal, setModal] = useState(false);
 
-  const checkedItemHandler = (id, isChecked) => {
-    if(isChecked) {
-      checkedItems.add(id);
-      setCheckedItems(checkedItems);
-      console.log("==== checked item ====");
-    } else if(!isChecked && checkedItems.has(id)) {
-      checkedItems.delete(id);
-      setCheckedItems(checkedItems);
-      console.log("==== deleted item ====");
-    }
-  };
+  const [detailAdmin, setDetailAdmin] = useState({});
 
-  const checkHandler = ({ target }) => {
-    setChecked(!bChecked);
-    checkedItemHandler(adminList.id, target.checked);
-  };
-
-  const allCheckedHandler = (isChecked) => {
-    if(isChecked) {
-      setCheckedItems(new Set(adminList.map(({ id }) => id)));
-      setIsAllChecked(true);
-    } else {
-      checkedItems.clear();
-      setCheckedItems(setCheckedItems);
-      setIsAllChecked(false);
-    }
-  };
-
-  const allCheckHandler = () => setChecked(isAllChecked);
-
-  const setModalState = () => {
+  const setModalState = (key, e) => {
     setModal(prev => !prev);
-  }
+    setDetailAdmin(adminList[key]);
+  };
 
   const getAdminList=async()=>{
     let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/admin';
@@ -80,7 +46,9 @@ const Admin = () => {
           </colgroup> 
           <thead>    
             <tr>
-              <th><input type="checkbox" checked={bChecked} onChange={(e) => checkHandler(e)} /></th>
+              <th>
+                <input type="checkbox" />
+              </th>
               <th>UID</th>
               <th>관리자ID</th>
               <th>관리자명</th>
@@ -90,8 +58,10 @@ const Admin = () => {
             </tr>
           </thead>
           <tbody>   
-            {adminList.map((item)=><tr className='adminList' onClick={setModalState}>
-              <td><input type="checkbox" checked={bChecked} /></td>
+            {adminList.map((item, index)=><tr className='adminList' onClick={(e) => {setModalState(index, e)}}>
+              <td>
+                <input type="checkbox" />
+              </td>
               <td>{item.uid}</td>
               <td>{item.adminId}</td>
               <td>{item.adminName}</td>
@@ -102,7 +72,7 @@ const Admin = () => {
           </tbody>
         </table>
       </div>
-      {modal && <DetailAdmin setModalState={setModalState} />}
+      {modal && <DetailAdmin setModalState={setModalState} detailAdmin={detailAdmin} />}
       <Paging></Paging>
     </div>
   )
