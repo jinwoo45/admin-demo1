@@ -17,7 +17,7 @@ const darkTheme = createTheme({
 function Login() {
     const navigate = useNavigate();
     const loginUser = (e) => {
-        navigate("/");
+        navigate("/member");
     };
 
     return (
