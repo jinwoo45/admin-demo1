@@ -1,0 +1,7 @@
+.modal > section > main div.create-admin-input {
+    padding: 0 5px;
+    width: 110px;
+}
+.modal > section > footer button.create-admin-cancel {
+    background-color: #ddd;
+}

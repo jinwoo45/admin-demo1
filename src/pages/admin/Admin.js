@@ -3,6 +3,7 @@ import './css/Admin.css'
 import DetailAdmin from './DetailAdmin'
 import Paging from 'components/Paging'
 import SearchAdmin from './SearchAdmin'
+import CreateAdmin from './CreateAdmin'
 
 const Admin = () => {
   const[adminList,setAdminList] = useState([]);
@@ -11,9 +12,15 @@ const Admin = () => {
 
   const [detailAdmin, setDetailAdmin] = useState({});
 
-  const setModalState = (key, e) => {
+  const [createModal, setCreateModal] = useState(false);
+
+  const setModalState = (key) => {
     setModal(prev => !prev);
     setDetailAdmin(adminList[key]);
+  };
+
+  const setCreateModalState = () => {
+    setCreateModal(prev => !prev);
   };
 
   const getAdminList=async()=>{
@@ -31,7 +38,7 @@ const Admin = () => {
       <SearchAdmin></SearchAdmin>
       <div className="admin-btn">
         <button type="button">선택 항목 삭제</button>
-        <button type="button">등록</button>
+        <button type="button" onClick={setCreateModalState}>등록</button>
       </div>
       <div>
         <table width ="100%">
@@ -73,6 +80,7 @@ const Admin = () => {
         </table>
       </div>
       {modal && <DetailAdmin setModalState={setModalState} detailAdmin={detailAdmin} />}
+      {createModal && <CreateAdmin setCreateModalState={setCreateModalState} />}
       <Paging></Paging>
     </div>
   )
