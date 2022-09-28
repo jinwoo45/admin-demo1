@@ -7,7 +7,7 @@ const DetailGathering = ({ setModalState }) => {
             <section>
                 <header>게더링 상세</header>
                 <main>
-                    <div>
+                    <div className="detail-gathering-wrap">
                         <ul>
                             <li>
                                 <div className="detail-gathering-input">No</div>
@@ -15,7 +15,13 @@ const DetailGathering = ({ setModalState }) => {
                             </li>
                             <li>
                                 <div className="detail-gathering-input">카테고리</div>
-                                <input type="text" defaultValue="함께해요" />
+                                <select>
+                                    <option>동아리</option>
+                                    <option>교내 프로그램</option>
+                                    <option>함께해요</option>
+                                    <option>해주세요</option>
+                                    <option>언어교환</option>
+                                </select>
                             </li>
                             <li>
                                 <div className="detail-gathering-input">제목</div>
@@ -43,7 +49,13 @@ const DetailGathering = ({ setModalState }) => {
                             </li>
                             <li>
                                 <div className="detail-gathering-input">상태</div>
-                                <input type="text" defaultValue="모집중"/>
+                                <select>
+                                    <option>모집중</option>
+                                    <option>마감</option>
+                                    <option>모임중</option>
+                                    <option>모임종료</option>
+                                    <option>모임 취소</option>
+                                </select>
                             </li>
                             <li>
                                 <div className="detail-gathering-input">권한</div>

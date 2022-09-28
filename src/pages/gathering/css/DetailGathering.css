@@ -10,6 +10,9 @@
 .modal > section > main .gathering-textarea {
     width: 100%;
 }
+.detail-gathering-wrap select {
+    width: 145px;
+}
 .modal > section > footer button.detail-gathering-cancel {
     background-color: #ddd;
 }
