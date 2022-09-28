@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Outlet, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSchool, faUser, faUsers, faGolfBall,faCaretDown, faUserGear, faStore, faFileImage, faComments, faCaretUp} from "@fortawesome/free-solid-svg-icons";
+import { faSchool, faUser, faUsers, faGolfBall,faCaretDown, faUserGear, faStore, faFileImage, faComments, faCaretUp, faBell} from "@fortawesome/free-solid-svg-icons";
 import Topbar from "./Topbar";
 import "assets/css/Sidebar.css";
 
@@ -48,22 +48,31 @@ const Sidebar = ({ sidebar, showSidebar }) => {
             menuName: "커뮤니티",
             subMenu : [
                 {
-                    route:"community/university",
-                    menuName : "학교 게시글"
+                    icon: "-",
+                    route:"community/free",
+                    menuName : "자유게시판"
                 },
                 {
-                    route:"community/freshman",
-                    menuName : "새내기 게시글"
+                    icon: "-",
+                    route:"community/info",
+                    menuName : "정보게시판"
                 },
                 {
+                    icon: "-",
                     route:"community/sophomore",
-                    menuName : "재학생 게시글"
+                    menuName : "학과게시판"
                 },
                 {
-                    route:"community/declare",
-                    menuName : "신고 게시글"
+                    icon: "-",
+                    route:"community/market",
+                    menuName : "장터게시판"
                 },
             ]
+        },
+        {
+            icon: <FontAwesomeIcon icon={faBell} />,
+            route: "declare",
+            menuName: "신고게시글",
         },
     ];
 
@@ -76,8 +85,9 @@ const Sidebar = ({ sidebar, showSidebar }) => {
     return (
         <div>
             <div className={sidebar ? "nav1 nav-off" : "nav1"}>
-                <div class="logo-box">
-                    <img src="./togather_logo.png" alt="로고" width={200} />
+
+                <div className="logo-box">
+                    <img src="/togather_logo.png" alt="로고" width={200} />
                 </div>
                 {menulist.map((menu, i) => (menu.subMenu ?<>
                         <div className="menu" onClick = {showSubmenu}>
@@ -91,7 +101,7 @@ const Sidebar = ({ sidebar, showSidebar }) => {
                         {submenu ? <ul className="submenu">
                             {menu.subMenu.map((item) =>(
                             <NavLink to ={item.route}><li >
-                                <div className="submenu-icon">-</div>
+                                <div className="submenu-icon">{item.icon}</div>
                                 <div className="menu-name">{item.menuName}</div>
                             </li></NavLink>))
                             }

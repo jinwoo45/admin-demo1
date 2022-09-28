@@ -3,6 +3,7 @@ import './css/Admin.css'
 import DetailAdmin from './DetailAdmin'
 import Paging from 'components/Paging'
 import SearchAdmin from './SearchAdmin'
+import CreateAdmin from './CreateAdmin'
 
 const Admin = () => {
   const[adminList,setAdminList] = useState([]);
@@ -11,9 +12,15 @@ const Admin = () => {
 
   const [detailAdmin, setDetailAdmin] = useState({});
 
-  const setModalState = (key, e) => {
+  const [createModal, setCreateModal] = useState(false);
+
+  const setModalState = (key) => {
     setModal(prev => !prev);
     setDetailAdmin(adminList[key]);
+  };
+
+  const setCreateModalState = () => {
+    setCreateModal(prev => !prev);
   };
 
   const getAdminList=async()=>{
@@ -31,10 +38,10 @@ const Admin = () => {
       <SearchAdmin></SearchAdmin>
       <div className="admin-btn">
         <button type="button">선택 항목 삭제</button>
-        <button type="button">등록</button>
+        <button type="button" onClick={setCreateModalState}>등록</button>
       </div>
       <div>
-        <table width ="100%">
+        <table className="admin-table" width ="100%">
           <colgroup>
           <col width = "10%"></col>
           <col width = "10%"></col>
@@ -60,7 +67,7 @@ const Admin = () => {
           <tbody>   
             {adminList.map((item, index)=><tr className='adminList' onClick={(e) => {setModalState(index, e)}}>
               <td>
-                <input type="checkbox" />
+                <input type="checkbox" onClick={(e) => {e.stopPropagation()}} />
               </td>
               <td>{item.uid}</td>
               <td>{item.adminId}</td>
@@ -73,6 +80,7 @@ const Admin = () => {
         </table>
       </div>
       {modal && <DetailAdmin setModalState={setModalState} detailAdmin={detailAdmin} />}
+      {createModal && <CreateAdmin setCreateModalState={setCreateModalState} />}
       <Paging></Paging>
     </div>
   )

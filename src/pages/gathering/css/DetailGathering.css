@@ -1,0 +1,15 @@
+.modal > section > main div.detail-gathering-input {
+    padding: 0 10px;
+    width: 85px;
+    text-align: right;
+}
+.modal > section > main textarea {
+    width: 433px;
+    height: 215px;
+}
+.modal > section > main .gathering-textarea {
+    width: 100%;
+}
+.modal > section > footer button.detail-gathering-cancel {
+    background-color: #ddd;
+}

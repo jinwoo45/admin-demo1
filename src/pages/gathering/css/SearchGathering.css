@@ -1,45 +1,43 @@
-.search-admin-container {
+.search-gathering-container {
     margin: 10px 0;
     padding: 10px;
     position: relative;
     background-color: #eee;
     border: 4px solid #aaa;
 }
-.search-admin-container div {
+.search-gathering-container div {
     margin-top: 10px;
 }
-.search-admin-container select {
+.search-gathering-container select {
     width: 120px;
     height: 30px;
     padding: 5px;
     border-radius: 5px;
 }
-.search-admin-container label {
+.search-gathering-container label {
     margin-right: 10px;
 }
-.search-admin-container .icon-arrow {
+.search-gathering-container .icon-arrow {
     position: absolute;
     top: 0;
     left: 65px;
     display: block;
     padding: 0;
 }
-
-.search-admin-container input {
+.search-gathering-container input {
     width: 300px;
     height: 30px;
     margin-left: 10px;
     border-radius: 5px;
     border: 1px solid #666;
 }
-.search-admin-container .search-group-wrap select {
+.search-gathering-container .search-category-wrap select {
     width: 120px;
 }
-.search-admin-container .search-btn-wrap {
+.search-gathering-container .search-btn-wrap {
     text-align: center;
 }
-
-.search-admin-container .search-admin-btn {
+.search-gathering-container .search-gathering-btn {
     margin: 5px;
     padding: 6px 12px;
     color: #fff;
