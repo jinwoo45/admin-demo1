@@ -16,6 +16,8 @@
 }
 .search-gathering-container label {
     margin-right: 10px;
+    display: inline-block;
+    width: 80px;
 }
 .search-gathering-container .icon-arrow {
     position: absolute;

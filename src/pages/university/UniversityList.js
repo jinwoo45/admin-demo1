@@ -48,7 +48,7 @@ const UniversityList = () => {
                         <td><input type="checkbox"></input></td>
                         <td>ku</td>
                         <td>건국대학교</td>
-                        <td>Y</td>
+                        <td>N</td>
                         <td>                    
                             <button className="info-button"onClick = {showModal} >정보 수정</button>
                         </td>
@@ -57,7 +57,7 @@ const UniversityList = () => {
                         <td><input type="checkbox"></input></td>
                         <td>cau</td>
                         <td>중앙대학교</td>
-                        <td>Y</td>
+                        <td>N</td>
                         <td>                    
                             <button className="info-button" onClick = {showModal}>정보 수정</button>
                         </td>

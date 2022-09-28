@@ -26,6 +26,7 @@ const ClubList = () => {
                     <col width="20%"></col>
                     <col width="10%"></col>
                     <col width="10%"></col>
+                    <col width="10%"></col>
                 </colgroup>
                 <thead>
                     <tr>
@@ -35,6 +36,7 @@ const ClubList = () => {
                         <th>학교</th>
                         <th>동아리</th>
                         <th>운영자</th>
+                        <th>모집 여부</th>
                         <th>기능</th>
                     </tr>
                 </thead>
@@ -44,6 +46,7 @@ const ClubList = () => {
                         <td>건국대학교 글로컬캠퍼스</td>
                         <td>요리동아리</td>
                         <td>김진우</td>
+                        <td>모집 중</td>
                         <td>                    
                             <button className="info-button" onClick = {showModal2}>명단</button>
                             <button className="info-button" onClick = {showModal}>정보 수정</button>
@@ -54,6 +57,7 @@ const ClubList = () => {
                         <td>건국대학교</td>
                         <td>미술동아리</td>
                         <td>유세련</td>
+                        <td>모집마감</td>
                         <td>                    
                             <button className="info-button" onClick = {showModal2}>명단</button>
                             <button className="info-button"onClick = {showModal} >정보 수정</button>
@@ -63,6 +67,7 @@ const ClubList = () => {
                         <td><input type="checkbox"></input></td>
                         <td>중앙대학교</td>
                         <td>게임동아리</td>
+                        <td>모집마감</td>
                         <td>도학태</td>
                         <td>          
                             <button className="info-button" onClick = {showModal2}>명단</button>          
@@ -74,6 +79,7 @@ const ClubList = () => {
                         <td>충북대학교</td>
                         <td>킥복싱동아리</td>
                         <td>오혜랑</td>
+                        <td>모집 중</td>
                         <td> 
                             <button className="info-button" onClick = {showModal2}>명단</button>                   
                             <button className="info-button" onClick = {showModal}>정보 수정</button>

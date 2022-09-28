@@ -30,8 +30,8 @@
 }
 .profilebox{
     position:absolute;
-    width:210px;
-    left:-120px;
+    width:220px;
+    left:-130px;
     top:30px;
     background-color: #313b3d;
     display: flex;
@@ -41,6 +41,7 @@
     z-index: 100;
     padding: 10px 15px;
 }
+
 .profilebox div{
     color: #fff;
 }

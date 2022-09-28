@@ -38,7 +38,7 @@ function App() {
                     <Route path="/club" element={<Club />} />
                     <Route path="/admin" element={<Admin />} />
                     <Route path="/store" element={<Store />} />
-                    <Route path="/nft" element={<Nft />} />
+                    <Route path="/nft" element={<Community />} />
                     <Route path="/community/free" element={<Community />} />
                     <Route path="/community/info" element={<Community />} />
                     <Route path="/community/sophomore" element={<Community />} />

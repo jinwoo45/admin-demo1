@@ -36,6 +36,7 @@ const Gathering = () => {
               <th>No</th>
               <th>제목</th>
               <th>카테고리</th>
+              <th>상태</th>
               <th>등록일</th>
             </tr>
           </thead>
@@ -45,13 +46,15 @@ const Gathering = () => {
               <td>1</td>
               <td>떡볶이 같이 먹어요!</td>
               <td>함께해요</td>
+              <td>모집중</td>
               <td>2022-09-26</td>
             </tr>
             <tr>
               <td><input type="checkbox" /></td>
               <td>2</td>
-              <td>떡볶이 같이 먹어요!</td>
-              <td>함께해요</td>
+              <td>도서관 자리 맡아주실 분 구합니다.</td>
+              <td>해주세요</td>
+              <td>마감</td>
               <td>2022-09-26</td>
             </tr>
           </tbody>
