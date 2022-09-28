@@ -25,7 +25,8 @@ const Gathering = () => {
           <col width = "10%"></col>
           <col width = "10%"></col>
           <col width = "40%"></col>
-          <col width = "20%"></col>
+          <col width = "10%"></col>
+          <col width = "10%"></col>
           <col width = "20%"></col>
           </colgroup> 
           <thead>    
