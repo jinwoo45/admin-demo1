@@ -50,6 +50,9 @@ button {
     cursor: pointer;
     border: none;
 }
+label {
+    font-size: 15px;
+}
 /* select {
     -o-appearance: none;
     -webkit-appearance: none;

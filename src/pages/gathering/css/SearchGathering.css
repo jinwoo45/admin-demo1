@@ -1,13 +1,21 @@
 .search-gathering-container {
     margin: 10px 0;
+    padding: 10px;
     position: relative;
+    background-color: #eee;
+    border: 4px solid #aaa;
 }
-
+.search-gathering-container div {
+    margin-top: 10px;
+}
 .search-gathering-container select {
-    width: 100px;
+    width: 120px;
     height: 30px;
     padding: 5px;
     border-radius: 5px;
+}
+.search-gathering-container label {
+    margin-right: 10px;
 }
 .search-gathering-container .icon-arrow {
     position: absolute;
@@ -16,11 +24,6 @@
     display: block;
     padding: 0;
 }
-.search-gathering-container .search-input-wrap {
-    position: relative;
-    display: inline-block;
-}
-
 .search-gathering-container input {
     width: 300px;
     height: 30px;
@@ -28,13 +31,17 @@
     border-radius: 5px;
     border: 1px solid #666;
 }
-
+.search-gathering-container .search-category-wrap select {
+    width: 120px;
+}
+.search-gathering-container .search-btn-wrap {
+    text-align: center;
+}
 .search-gathering-container .search-gathering-btn {
-    position: absolute;
-    top: 6px;
-    right: 10px;
-    color: #333;
-    background-color: #fff;
+    margin: 5px;
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #6c5ce7;
     border-radius: 5px;
     font-size: 13px;
 }
