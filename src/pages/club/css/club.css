@@ -1,0 +1,7 @@
+.clubmember-box-in{
+width: 100%;
+}
+
+.clubmember-box-in li{
+    display: flex;
+}

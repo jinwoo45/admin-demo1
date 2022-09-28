@@ -57,19 +57,7 @@ button {
     appearance: none;
 } */
 
-.nav2-right {
-    display: flex;
-}
 
-.nav2-right div {
-    margin: 10px 15px;
-    color: #333;
-    cursor: pointer;
-}
-
-.nav2-right div:hover {
-    color: #000;
-}
 
 .bars {
     display: flex;

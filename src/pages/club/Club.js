@@ -1,9 +1,14 @@
 import React from 'react'
+import ClubSearch from './ClubSearch'
+import ClubList from './ClubList'
+import Paging from 'components/Paging'
 
 const Club = () => {
   return (
     <div>
-      동아리 관리 페이지 입니다.
+      <ClubSearch></ClubSearch>
+      <ClubList></ClubList>
+      <Paging></Paging>
     </div>
   )
 }
