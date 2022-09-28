@@ -85,11 +85,8 @@ const Sidebar = ({ sidebar, showSidebar }) => {
     return (
         <div>
             <div className={sidebar ? "nav1 nav-off" : "nav1"}>
-<<<<<<< HEAD
+
                 <div className="logo-box">
-=======
-                <div class="logo-box">
->>>>>>> origin/feature/school-admin
                     <img src="/togather_logo.png" alt="로고" width={200} />
                 </div>
                 {menulist.map((menu, i) => (menu.subMenu ?<>
