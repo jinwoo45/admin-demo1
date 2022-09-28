@@ -1,13 +1,13 @@
-.admin-container {
+.community-container {
     margin-top: 20px;
 }
 
-.admin-container .admin-btn {
+.community-container .community-btn {
     display: flex;
     justify-content: space-between;
 }
 
-.admin-container .admin-btn button {
+.community-container .community-btn button {
     margin: 5px;
     padding: 6px 12px;
     color: #fff;
@@ -15,6 +15,6 @@
     border-radius: 5px;
     font-size: 13px;
 }
-.admin-container .admin-table tr {
+.community-container .community-table tr {
     cursor: pointer;
 }

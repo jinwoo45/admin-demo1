@@ -41,7 +41,7 @@ const Admin = () => {
         <button type="button" onClick={setCreateModalState}>등록</button>
       </div>
       <div>
-        <table width ="100%">
+        <table className="admin-table" width ="100%">
           <colgroup>
           <col width = "10%"></col>
           <col width = "10%"></col>
@@ -67,7 +67,7 @@ const Admin = () => {
           <tbody>   
             {adminList.map((item, index)=><tr className='adminList' onClick={(e) => {setModalState(index, e)}}>
               <td>
-                <input type="checkbox" />
+                <input type="checkbox" onClick={(e) => {e.stopPropagation()}} />
               </td>
               <td>{item.uid}</td>
               <td>{item.adminId}</td>

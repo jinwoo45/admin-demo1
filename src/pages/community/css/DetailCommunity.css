@@ -1,0 +1,14 @@
+.modal > section > main div.detail-community-input {
+    padding: 0 5px;
+    width: 85px;
+}
+.modal > section > main textarea {
+    width: 433px;
+    height: 215px;
+}
+.modal > section > main .community-textarea {
+    width: 100%;
+}
+.modal > section > footer button.detail-community-cancel {
+    background-color: #ddd;
+}

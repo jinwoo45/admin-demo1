@@ -1,27 +1,27 @@
-.search-admin-container {
+.search-community-container {
     margin: 10px 0;
     position: relative;
 }
 
-.search-admin-container select {
+.search-community-container select {
     width: 100px;
     height: 30px;
     padding: 5px;
     border-radius: 5px;
 }
-.search-admin-container .icon-arrow {
+.search-community-container .icon-arrow {
     position: absolute;
     top: 0;
     left: 65px;
     display: block;
     padding: 0;
 }
-.search-admin-container .search-input-wrap {
+.search-community-container .search-input-wrap {
     position: relative;
     display: inline-block;
 }
 
-.search-admin-container input {
+.search-community-container input {
     width: 300px;
     height: 30px;
     margin-left: 10px;
@@ -29,7 +29,7 @@
     border: 1px solid #666;
 }
 
-.search-admin-container .search-admin-btn {
+.search-community-container .search-community-btn {
     position: absolute;
     top: 6px;
     right: 10px;

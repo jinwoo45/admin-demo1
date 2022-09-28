@@ -1,25 +1,25 @@
-import React from "react";
-import "./css/SearchAdmin.css";
+import React from 'react'
+import './css/SearchGathering.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SearchAdmin = () => {
+const SearchGathering = () => {
     return (
-        <div className="search-admin-container">
+        <div className="search-gathering-container">
             <select>
                 <option value="/">전체</option>
-                <option value="adminId">관리자ID</option>
-                <option value="adminGroup">그룹명</option>
-                <option value="adminDept">부서명</option>
+                <option>제목</option>
+                <option>내용</option>
+                <option></option>
             </select>
             <div className="search-input-wrap">
                 <input type="text" />
-                <button className="search-admin-btn">
+                <button className="search-gathering-btn">
                     <FontAwesomeIcon icon={faSearch} />
                 </button>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default SearchAdmin;
+export default SearchGathering

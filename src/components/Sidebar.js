@@ -76,8 +76,8 @@ const Sidebar = ({ sidebar, showSidebar }) => {
     return (
         <div>
             <div className={sidebar ? "nav1 nav-off" : "nav1"}>
-                <div class="logo-box">
-                    <img src="./togather_logo.png" alt="로고" width={200} />
+                <div className="logo-box">
+                    <img src="/togather_logo.png" alt="로고" width={200} />
                 </div>
                 {menulist.map((menu, i) => (menu.subMenu ?<>
                         <div className="menu" onClick = {showSubmenu}>
