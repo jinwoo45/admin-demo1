@@ -7,6 +7,10 @@ const UniversitySearch = () => {
         <form>
             <div className="search-box-out">
                 <div className="search-box-in">
+                    <label>대표코드 : </label>
+                <input></input>
+                </div>
+                <div className="search-box-in">
                     <label>학교 : </label>
                 <input></input>
                 </div>

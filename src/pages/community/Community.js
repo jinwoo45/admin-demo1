@@ -17,6 +17,7 @@ const Community = () => {
       <SearchCommunity></SearchCommunity>
       <div className="community-btn">
         <button type="button">선택 항목 삭제</button>
+        <button type="button">회원 제재</button>
       </div>
       <div>
         <table className="community-table" width ="100%">
