@@ -1,9 +1,9 @@
 .modal-update-box{
-    width: 1000px;
-    height: 450px;
+    width:100%;
+    max-width: 800px;
+    height: 420px;
     background-color: #fff;
-    padding: 50px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .modal-update-box-in{
@@ -13,12 +13,12 @@
 
 .modal-update-box-in li{
     width: calc(100% / 2);
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
 }
 
 .modal-update-button-box{
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,4 +27,18 @@
 .table-front{
     width: 150px;
     text-align: left;
+}
+
+.modal-update-box header{
+    border-radius: 20px 20px 0 0;
+    background-color: #f1f1f1;
+    font-weight: 700;
+    padding: 16px 64px 16px 16px;
+    text-align: left;
+}
+
+.modal-update-box main{
+    padding: 40px;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
 }

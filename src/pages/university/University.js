@@ -1,13 +1,14 @@
 import React from 'react'
 import Paging from 'components/Paging'
-import Search from 'components/Search'
-import Table from 'components/Table'
+import UniversitySearch from './UniversitySearch'
+import UniversityList from './UniversityList'
+
 
 const University = () => {
   return (
     <div>
-        <Search></Search>
-        <Table></Table>
+        <UniversitySearch></UniversitySearch>
+        <UniversityList></UniversityList>
         <Paging></Paging>
     </div>
   )

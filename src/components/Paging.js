@@ -13,8 +13,6 @@ const Paging = () => {
           <li className='active'>1</li>
           <li>2</li>
           <li>3</li>
-          <li>4</li>
-          <li>5</li>
           <li><FontAwesomeIcon icon = {faAngleRight} className = "icon" /></li>
           <li><FontAwesomeIcon icon = {faAnglesRight} className = "icon" /></li>
         </ul>

@@ -14,6 +14,13 @@ const MemberSearch = () => {
                                 <option>배제대학교</option>
                             </select>
                         </div>
+                        <div className="search-box-in">
+                            <label>인증여부 : </label>
+                            <select>
+                                <option>Y</option>
+                                <option>N</option>
+                            </select>
+                        </div>
 
                         <div className="search-box-in">
                             <label>검색어 : </label>
@@ -28,10 +35,6 @@ const MemberSearch = () => {
                             <input></input>
                         </div>
 
-                        {/* <div className='search-box-in'>
-          <label>가입일 : </label>
-          <input></input> ~ <input></input>
-        </div> */}
                     </div>
                     <div className="button-box">
                         <button className="member-button">검색</button>
