@@ -32,11 +32,11 @@ const Sidebar = ({ sidebar, showSidebar }) => {
             route: "admin",
             menuName: "관리자",
         },
-        {
-            icon: <FontAwesomeIcon icon={faStore} />,
-            route: "store",
-            menuName: "상점등록",
-        },
+        // {
+        //     icon: <FontAwesomeIcon icon={faStore} />,
+        //     route: "store",
+        //     menuName: "상점등록",
+        // },
         {
             icon: <FontAwesomeIcon icon={faFileImage} />,
             route: "nft",
