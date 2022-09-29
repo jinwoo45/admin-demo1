@@ -42,8 +42,6 @@ const Member = () => {
                     <col width="10%"></col>
                     <col width="10%"></col>
                     <col width="10%"></col>
-                    <col width="10%"></col>
-                    <col width="10%"></col>
                 </colgroup>
                 <thead>
                     <tr>
@@ -57,8 +55,6 @@ const Member = () => {
                         <th>학교</th>
                         <th>인증 여부</th>
                         <th>계정 정지 여부</th>
-                        <th>인증데이터</th>
-                        <th>기능</th>
                     </tr>
                 </thead>
                 {memberList.map((item) => (
