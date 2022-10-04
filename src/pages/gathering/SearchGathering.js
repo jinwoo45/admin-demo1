@@ -24,7 +24,7 @@ const SearchGathering = () => {
                 </select>
                 <input type="text" />
             </div>
-            <div class="search-btn-wrap">
+            <div className="search-btn-wrap">
                 <button type="button" className="search-gathering-btn">검색</button>
             </div>
         </div>

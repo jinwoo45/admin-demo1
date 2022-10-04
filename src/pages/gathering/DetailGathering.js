@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/DetailGathering.css'
 
-const DetailGathering = ({ setModalState }) => {
+const DetailGathering = ({ setModalState, detailGathering }) => {
     return (
         <div className="modal openModal">
             <section>
@@ -10,13 +10,13 @@ const DetailGathering = ({ setModalState }) => {
                     <div className="detail-gathering-wrap">
                         <ul>
                             <li>
-                                <div className="detail-gathering-input">No</div>
-                                <input type="text" defaultValue="1" />
+                                <div className="detail-gathering-input">UUID</div>
+                                <input type="text" defaultValue={detailGathering.id} />
                             </li>
                             <li>
                                 <div className="detail-gathering-input">카테고리</div>
                                 <select>
-                                    <option>동아리</option>
+                                    <option>{detailGathering.gatherCategory}</option>
                                     <option>교내 프로그램</option>
                                     <option>함께해요</option>
                                     <option>해주세요</option>
@@ -25,31 +25,32 @@ const DetailGathering = ({ setModalState }) => {
                             </li>
                             <li>
                                 <div className="detail-gathering-input">제목</div>
-                                <input type="text" defaultValue="떡볶이 같이 먹어요!" />
+                                <input type="text" defaultValue={detailGathering.gatherTitle} />
                             </li>
                             <li>
                                 <div className="detail-gathering-input">인원</div>
-                                <input type="text" defaultValue="1/5" />
+                                <input type="text" defaultValue={detailGathering.gatherPeople} />
                             </li>
                             <li>
                                 <div className="detail-gathering-input">날짜</div>
-                                <input type="text" defaultValue="2022-09-26" />
+                                <input type="text" defaultValue={detailGathering.gatherStartDate} />
                             </li>
                             <li>
                                 <div className="detail-gathering-input">시작시간</div>
-                                <input type="textarea" defaultValue="13:00" />
+                                <input type="textarea" defaultValue={detailGathering.gatherStartTime} />
                             </li>
                             <li>
                                 <div className="detail-gathering-input">종료시간</div>
-                                <input type="textarea" defaultValue="15:00" />
+                                <input type="textarea" defaultValue={detailGathering.gatherEndTime} />
                             </li>
                             <li>
                                 <div className="detail-gathering-input">장소</div>
-                                <input type="text" defaultValue="죠스떡볶이" />
+                                <input type="text" defaultValue={detailGathering.gatherPlace} />
                             </li>
                             <li>
                                 <div className="detail-gathering-input">상태</div>
                                 <select>
+                                    <option>{detailGathering.gatherStatus}</option>
                                     <option>모집중</option>
                                     <option>마감</option>
                                     <option>모임중</option>
@@ -58,12 +59,12 @@ const DetailGathering = ({ setModalState }) => {
                                 </select>
                             </li>
                             <li>
-                                <div className="detail-gathering-input">권한</div>
-                                <input type="text" defaultValue="사용자"/>
+                                <div className="detail-gathering-input">지급 포인트</div>
+                                <input type="text" defaultValue={detailGathering.gatherPoint}/>
                             </li>
-                            <li class="gathering-textarea">
+                            <li className="gathering-textarea">
                                 <div className="detail-gathering-input">내용</div>
-                                <textarea defaultValue="떡볶이"></textarea>
+                                <textarea defaultValue={detailGathering.gatherContent}></textarea>
                             </li>
                         </ul>
                     </div>

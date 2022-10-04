@@ -53,6 +53,9 @@ button {
 label {
     font-size: 15px;
 }
+textarea {
+    resize: none;
+}
 /* select {
     -o-appearance: none;
     -webkit-appearance: none;

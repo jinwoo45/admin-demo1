@@ -8,6 +8,8 @@ import Paging from 'components/Paging';
 const Community = () => {
   const [modal, setModal] = useState(false);
 
+  const [checkItems, setCheckItems] = useState([]);
+
   const setModalState = () => {
     setModal(prev => !prev);
   };
