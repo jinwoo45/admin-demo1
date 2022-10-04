@@ -40,7 +40,7 @@ const Gathering = () => {
   };
 
   const getAdminList = async () => {
-    let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/admin';
+    let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/gathering';
     //let url = 'http://localhost:3002/gathering';
     let response = await fetch(url);
     let data = await response.json();
