@@ -14,6 +14,8 @@ const Admin = () => {
 
   const [createModal, setCreateModal] = useState(false);
 
+  const [checkItems, setCheckItems] = useState([]);
+
   const setModalState = (key) => {
     setModal(prev => !prev);
     setDetailAdmin(adminList[key]);
@@ -23,16 +25,35 @@ const Admin = () => {
     setCreateModal(prev => !prev);
   };
 
-  const getAdminList=async()=>{
-    let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/admin';
-    //let url = 'http://localhost:3002/admin';
+  const handleSingleCheck = (checked, id) => {
+    if (checked) {
+      setCheckItems(prev => [...prev, id]);
+    } else {
+      setCheckItems(checkItems.filter((el) => el !== id));
+    }
+  };
+
+  const handleAllCheck = (checked) => {
+    if(checked) {
+      const idArray = [];
+      adminList.forEach((el) => idArray.push(el.id));
+      setCheckItems(idArray);
+    }
+    else {
+      setCheckItems([]);
+    }
+  };
+
+  const getAdminList = async () => {
+    //let url = 'https://my-json-server.typicode.com/jinwoo45/admin-demo1/admin';
+    let url = 'http://localhost:3002/admin';
     let response = await fetch(url);
     let data = await response.json();
     setAdminList(data);
   }
-    useEffect(()=>{
-      getAdminList()
-    },[])
+    useEffect(() => {
+      getAdminList();
+    },[]);
   return (
     <div className="admin-container">
       <SearchAdmin></SearchAdmin>
@@ -54,9 +75,9 @@ const Admin = () => {
           <thead>    
             <tr>
               <th>
-                <input type="checkbox" />
+                <input type="checkbox" onChange={(e) => handleAllCheck(e.target.checked)} checked={checkItems.length === adminList.length ? true : false} />
               </th>
-              <th>UID</th>
+              <th>UUID</th>
               <th>관리자ID</th>
               <th>관리자명</th>
               <th>그룹명</th>
@@ -65,11 +86,11 @@ const Admin = () => {
             </tr>
           </thead>
           <tbody>   
-            {adminList.map((item, index)=><tr className='adminList' onClick={(e) => {setModalState(index, e)}}>
+            {adminList.map((item, index)=><tr className='adminList' key={item.id} onClick={(e) => {setModalState(index, e)}}>
               <td>
-                <input type="checkbox" onClick={(e) => {e.stopPropagation()}} />
+                <input type="checkbox" checked={checkItems.includes(item.id) ? true : false} onChange={(e) => handleSingleCheck(e.target.checked, item.id)} onClick={(e) => {e.stopPropagation()}} />
               </td>
-              <td>{item.uid}</td>
+              <td>{item.id}</td>
               <td>{item.adminId}</td>
               <td>{item.adminName}</td>
               <td>{item.adminGroup}</td>

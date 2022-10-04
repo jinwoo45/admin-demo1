@@ -10,8 +10,8 @@ const DetailAdmin = ({ detailAdmin, setModalState }) => {
                 <div>
                     <ul>
                         <li>
-                            <div className="admin-input-name">UID</div>
-                            <input type="text" defaultValue={detailAdmin.uid} />
+                            <div className="admin-input-name">UUID</div>
+                            <input type="text" defaultValue={detailAdmin.id} />
                         </li>
                         <li>
                             <div className="admin-input-name">관리자ID</div>

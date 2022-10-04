@@ -128,7 +128,7 @@
     ],
     "admin": [
         {
-            "uid":"wefdsfs",
+            "id":"B00001",
             "adminId": "super",
             "adminName": "관리자",
             "adminGroup": "슈퍼관리자",
@@ -140,7 +140,7 @@
             "updateDate": "2022-09-10"
         },
         {
-            "uid":"wefdsfs",
+            "id":"B00002",
             "adminId": "tnmeta",
             "adminName": "관리자",
             "adminGroup": "티앤메타관리자",
@@ -152,7 +152,7 @@
             "updateDate": "2022-09-10"
         },
         {
-            "uid":"wefdsfs",
+            "id":"B00003",
             "adminId": "admin",
             "adminName": "관리자",
             "adminGroup": "학교관리자",
@@ -162,6 +162,72 @@
             "createId": "super",
             "createDate": "2022-09-07",
             "updateDate": "2022-09-10"
+        }
+    ],
+    "gathering": [
+        {
+            "id":"C00001",
+            "gatherCategory": "함께해요",
+            "gatherTitle": "함께 하실 분 구합니다.",
+            "gatherPeople": "1",
+            "gatherStartDate": "2022-09-26",
+            "gatherEndDate": "2022-09-26",
+            "gatherStartTime": "13:00",
+            "gatherEndTime": "15:00",
+            "gatherPlace": "죠스떡볶이",
+            "gatherStatus": "모집중",
+            "gatherPoint": "10",
+            "gatherContent": "함께해요",
+            "createId": "user123",
+            "createDate": "2022-09-26"
+        },
+        {
+            "id":"C00002",
+            "gatherCategory": "해주세요",
+            "gatherTitle": "도서관 자리 맡아주실 분 구합니다.",
+            "gatherPeople": "1",
+            "gatherStartDate": "2022-09-26",
+            "gatherEndDate": "2022-09-26",
+            "gatherStartTime": "13:00",
+            "gatherEndTime": "15:00",
+            "gatherPlace": "도서관",
+            "gatherStatus": "마감",
+            "gatherPoint": "15",
+            "gatherContent": "해주세요",
+            "createId": "user234",
+            "createDate": "2022-09-26"
+        },
+        {
+            "id":"C00003",
+            "gatherCategory": "동아리",
+            "gatherTitle": "동아리원 모집합니다.",
+            "gatherPeople": "3",
+            "gatherStartDate": "2022-09-26",
+            "gatherEndDate": "2022-10-30",
+            "gatherStartTime": "00:00",
+            "gatherEndTime": "00:00",
+            "gatherPlace": "동아리실",
+            "gatherStatus": "모집중",
+            "gatherPoint": "5",
+            "gatherContent": "동아리",
+            "createId": "user345",
+            "createDate": "2022-09-26"
+        },
+        {
+            "id":"C00004",
+            "gatherCategory": "언어교환",
+            "gatherTitle": "영어 배우고 싶으신 분",
+            "gatherPeople": "1",
+            "gatherStartDate": "2022-09-26",
+            "gatherEndDate": "2022-09-27",
+            "gatherStartTime": "00:00",
+            "gatherEndTime": "00:00",
+            "gatherPlace": "카페",
+            "gatherStatus": "마감",
+            "gatherPoint": "10",
+            "gatherContent": "언어교환해요",
+            "createId": "user456",
+            "createDate": "2022-09-26"
         }
     ]
 }
