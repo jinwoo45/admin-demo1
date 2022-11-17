@@ -1,71 +1,73 @@
-.nav2{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.nav2-right{
-    display: flex;
-    cursor: pointer;
+.nav2-right {
+  display: flex;
+  cursor: pointer;
 }
 
-.nav2-right>div{
-    margin:10px 15px;
+.nav2-right > div {
+  margin: 10px 15px;
 }
 
-.bars{
-    display: flex;
-    align-items: center;
+.bars {
+  display: flex;
+  align-items: center;
 }
 
-.bar-icon{
-    font-size: 1.4rem;
-    padding: 7px;
-    border-radius: 5px;
-    cursor: pointer;
+.bar-icon {
+  font-size: 1.4rem;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.profile{
-    position: relative;
+.profile {
+  position: relative;
+  text-decoration: underline;
+  text-underline-position: under;
 }
-.profilebox{
-    position:absolute;
-    width:220px;
-    left:-130px;
-    top:30px;
-    background-color: #313b3d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    z-index: 100;
-    padding: 10px 15px;
-}
-
-.profilebox div{
-    color: #fff;
+.profilebox {
+  position: absolute;
+  width: 220px;
+  left: -130px;
+  top: 30px;
+  background-color: #313b3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 100;
+  padding: 10px 15px;
 }
 
-.profile-icon{
-    font-size: 3.4rem;
-}
-.profile-text{
-    font-size: 13px;
-    margin-left: 20px;
+.profilebox div {
+  color: #fff;
 }
 
-.profile-text button{
-    margin-top: 10px;
+.profile-icon {
+  font-size: 3.4rem;
+}
+.profile-text {
+  font-size: 13px;
+  margin-left: 20px;
 }
 
-.profile-tri{
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-bottom: 10px solid #313b3d;;
-    border-top: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    top:-20px;
-    left: 120px;
+.profile-text button {
+  margin-top: 10px;
+}
+
+.profile-tri {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #313b3d;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -20px;
+  left: 120px;
 }
