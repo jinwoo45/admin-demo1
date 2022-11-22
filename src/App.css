@@ -2,107 +2,36 @@
 보조 컬러 #fdcb6e */
 
 * {
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
-/* #root {
-    margin-left: 270px;
-    padding: 0 20px;
-} */
-
-.content {
-    margin-left: 270px;
-    padding: 0 20px;
-    transition: 0.3s;
+main {
+  width: calc(100% - 70px);
+  margin: 10px;
 }
-
-.content-long {
-    margin: 0;
-}
-
-.loginroot {
-    margin-right: 270px;
-}
-
-table {
-    margin-top: 8px;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 15px;
-}
-th {
-    background-color: #efefef;
-    padding: 10px 5px;
-}
-td {
-    border-bottom: 1px solid #eee;
-    padding: 10px 5px;
-}
-button {
-    cursor: pointer;
-    border: none;
-}
-label {
-    font-size: 15px;
-}
-textarea {
-    resize: none;
-}
-/* select {
-    -o-appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-} */
-
-
-
-.bars {
-    display: flex;
-    align-items: center;
-}
-
-.bar-icon {
-    color: #000;
-    font-size: 1.6rem;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.nav2-right-icon {
-    margin-right: 5px;
-}
-
-.footer {
-    /* position: fixed; */
-    bottom: 0;
-    margin-top: 250px;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .login-btn {
-    font-weight: bold !important;
-    background-color: #6c5ce7 !important;
+  font-weight: bold !important;
+  background-color: #6c5ce7 !important;
 }
 
 .Mui-focused {
-    color: #6c5ce7 !important;
+  color: #6c5ce7 !important;
 }
 
 .MuiOutlinedInput-notchedOutline {
-    border-color: #6c5ce7 !important;
+  border-color: #6c5ce7 !important;
 }

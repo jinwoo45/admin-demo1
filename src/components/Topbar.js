@@ -36,7 +36,7 @@ const Topbar = ({ showSidebar }) => {
               </div>
               <div className="profile-text">
                 <div>admin(슈퍼관리자)</div>
-                <button className="member-button">프로필 수정</button>
+
                 <button onClick={logoutUser} className="member-button">
                   <FontAwesomeIcon icon={faLock} className="nav2-right-icon" />
                   로그아웃
