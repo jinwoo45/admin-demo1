@@ -14,13 +14,15 @@ import {
   faLock,
 } from "@fortawesome/free-solid-svg-icons";
 import Approve from "pages/market/approve/Approve";
+import "assets/css/Layout.module.css";
 
-const Layout = () => {
+const Layout = (props) => {
+  const logoutUser = () => {
+    props.auth();
+    console.log(props.auth);
+  };
   const { collapseSidebar } = useProSidebar();
   const navigate = useNavigate();
-  const logoutUser = (e) => {
-    navigate("/login");
-  };
 
   const [profile, setProfile] = useState(false);
 
@@ -29,7 +31,10 @@ const Layout = () => {
   };
   return (
     <div style={{ display: "flex", height: "100%" }}>
-      <Sidebar collapsedWidth="30px">
+      <Sidebar collapsedWidth="0px">
+        <div className="logo_box" onClick={() => navigate("/")}>
+          <img src="/torymeta_logo.png" alt="로고" width={200} />
+        </div>
         <Menu>
           <SubMenu label="회원관리">
             <MenuItem routerLink={<Link to="/member" />}>

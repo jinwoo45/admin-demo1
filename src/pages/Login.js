@@ -6,12 +6,11 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { useNavigate } from "react-router-dom";
 
-function Login() {
-  const navigate = useNavigate();
-  const loginUser = (e) => {
-    navigate("/member");
+function Login(props) {
+  const loginUser = () => {
+    props.auth();
+    console.log(props.auth);
   };
   const darkTheme = createTheme({
     palette: {
@@ -31,7 +30,7 @@ function Login() {
               alignItems: "center",
             }}
           >
-            <img width={350} src="./torymeta_logo.png" alt="logo"></img>
+            <img width={350} src="/torymeta_logo_big.png" alt="logo"></img>
 
             <TextField
               label="관리자 ID"

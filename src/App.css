@@ -23,6 +23,11 @@ header {
   margin-bottom: 10px;
 }
 
+.logo_box {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
 .login-btn {
   font-weight: bold !important;
   background-color: #6c5ce7 !important;
